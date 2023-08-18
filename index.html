@@ -1,0 +1,239 @@
+<!--
+Nombre: Rodolfo Torres
+Email: rodolfo.torres@outlook.com
+LinkedIn: https://www.linkedin.com/in/rodolfo-torres-p/?locale=es_ES
+
+Este sitio web y su contenido están bajo la Licencia Creative Commons Atribución 4.0 Internacional.
+Puedes usar, compartir y adaptar libremente este sitio y su contenido, siempre que proporciones
+atribución al autor original, en este caso, Rodolfo Torres.
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explora esta página con navegación mediante voz. Descubre cómo la tecnología de reconocimiento de voz está transformando la forma en que interactuamos en línea.">
+    <meta name="keywords" content="Colombia, navegación, voz, reconocimiento de voz, tecnología, innovación">
+    <meta name="author" content="Rodolfo Torres">
+    <meta name="email" content="rodolfo.torres@outlook.com">
+    <meta name="linkedin" content="https://www.linkedin.com/in/rodolfo-torres-p/?locale=es_ES">
+    <meta property="og:title" content="Página con Navegación Mediante Voz | Tecnología de Reconocimiento de Voz">
+    <meta property="og:description"
+        content="Explora esta página con navegación mediante voz. Descubre cómo la tecnología de reconocimiento de voz está transformando la forma en que interactuamos en línea.">
+    <meta property="og:image" content="https://rt4apps.com/audionav">
+    <meta property="og:url" content="https://rt4apps.com/audionav/img/preview.jpg">
+    <meta property="og:type" content="website">
+    <title>Página con Navegación Mediante Voz | Tecnología de Reconocimiento de Voz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span>Página con</span>
+                <span class="text-primary">Navegación Mediante Voz</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicio">Servicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary mr-2" id="playButton">Iniciar</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-danger" id="stopButton" style="display: none;">Detener</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="toastContainer" class="toast-container position-fixed top-0 end-0 p-3"></div>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="py-5 text-center">
+        <div class="container">
+            <br><br><br>
+            <h1>¡Bienvenido a esta página de ejemplo!</h1>
+            <p>Aquí podrás experimentar la fascinante navegación por voz.<br>Para comenzar, simplemente dale clic al botón <b>'Iniciar'</b> y adéntrate en una nueva forma de interactuar con nuestro contenido."</p>
+            <!-- Carrusel (Slider) -->
+            <div id="carrusel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carrusel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carrusel" data-slide-to="1"></li>
+                    <li data-target="#carrusel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://dummyimage.com/800x400/cccccc/000000&text=Imagen+1" alt="Imagen 1"
+                            class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Título de la Imagen 1</h5>
+                            <p>Descripción breve de la imagen 1.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://dummyimage.com/800x400/cccccc/000000&text=Imagen+2" alt="Imagen 2"
+                            class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Título de la Imagen 2</h5>
+                            <p>Descripción breve de la imagen 2.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://dummyimage.com/800x400/cccccc/000000&text=Imagen+3" alt="Imagen 3"
+                            class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Título de la Imagen 3</h5>
+                            <p>Descripción breve de la imagen 3.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carrusel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carrusel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="py-5 bg-light">
+        <div class="container">
+            <br><br><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://dummyimage.com/600x400/cccccc/000000&text=Equipo" alt="Equipo"
+                        class="img-fluid rounded-circle">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-primary">Nosotros</h2>
+                    <p>Somos una empresa dedicada al desarrollo de páginas web y experiencias interactivas innovadoras.
+                        Nuestra pasión por la tecnología y la creatividad nos impulsa a crear soluciones digitales
+                        únicas para nuestros clientes.</p>
+                    <p>Nuestro equipo está compuesto por expertos en diseño web, desarrollo frontend y backend, así como
+                        en inteligencia artificial. Trabajamos en colaboración para ofrecer soluciones que fusionan la
+                        estética con la funcionalidad y la inteligencia artificial.</p>
+                    <p>En cada proyecto, nos esforzamos por comprender las necesidades y objetivos de nuestros clientes
+                        para crear experiencias en línea que cautiven a su audiencia y generen resultados positivos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicio -->
+    <section id="servicio" class="py-5">
+        <div class="container">
+            <br><br><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-primary">Servicio</h2>
+                    <p>En nuestro enfoque de desarrollo de páginas web y experiencias interactivas, utilizamos la
+                        inteligencia artificial (IA) para llevar la innovación a otro nivel. Nuestros servicios
+                        incluyen:</p>
+                    <ul>
+                        <li>Desarrollo de páginas web a medida y con diseño personalizado.</li>
+                        <li>Experiencias interactivas que capturan la atención de los usuarios.</li>
+                        <li>Integración de soluciones de IA para optimizar la experiencia del usuario.</li>
+                        <li>Asesoramiento y consultoría en estrategias digitales y tecnologías emergentes.</li>
+                        <li>Optimización de sitios web para un rendimiento excepcional y una experiencia fluida.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://dummyimage.com/600x400/cccccc/000000&text=Servicio" alt="Servicio"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <!-- Sección Contacto -->
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+            <br><br><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Contacto</h2>
+                    <p>Si deseas obtener más información sobre nuestros servicios o tienes alguna pregunta, no dudes en
+                        ponerte en contacto con nosotros. Estamos aquí para ayudarte.</p>
+                    <ul>
+                        <li><strong>Correo Electrónico:</strong> <a href="mailto:rodolfo.torres@outlook.com">rodolfo.torres@outlook.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h2>Formulario de Contacto</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo Electrónico:</label>
+                            <input type="email" class="form-control" id="correo"
+                                placeholder="Ingresa tu correo electrónico">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" rows="4"
+                                placeholder="Escribe tu mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Síguenos en las Redes Sociales</h3>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/RodoDevep" class="text-white" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/rodolfo-torres-p/?locale=es_ES" class="text-white" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-envelope"></i> Correo Electrónico: <a href="mailto:rodolfo.torres@outlook.com">rodolfo.torres@outlook.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
