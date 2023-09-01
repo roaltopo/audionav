@@ -4,9 +4,9 @@
  * Email: rodolfo.torres@outlook.com
  * LinkedIn: https://www.linkedin.com/in/rodolfo-torres-p/?locale=es_ES
  *
- * Este código está bajo la Licencia Creative Commons Atribución 4.0 Internacional.
- * Puedes usar, compartir y adaptar libremente este código, siempre que proporciones
- * atribución al autor original, en este caso, Rodolfo Torres.
+ * Este código está bajo la Licencia Pública General de GNU (GPL) versión 3 o posterior.
+ * Puedes usar, compartir y adaptar libremente este código, siempre y cuando cumplas con los términos de la GPL.
+ * Asegúrate de proporcionar el código fuente junto con cualquier distribución del software y de mantener intactos los avisos de derechos de autor y la licencia de la GPL.
  */
 
 let recognition; // Variable global para almacenar la instancia de reconocimientoç

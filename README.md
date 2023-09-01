@@ -21,7 +21,9 @@ Puedes ver la página en acción accediendo a la siguiente URL: [https://rt4apps
 
 ## Licencia
 
-Este proyecto está bajo la Licencia Creative Commons Atribución 4.0 Internacional. Puedes usar, compartir y adaptar libremente este código, siempre que proporciones atribución al autor original, Rodolfo Torres.
+Este proyecto está bajo la Licencia Pública General de GNU (GPL) versión 3 o posterior. Puedes usar, compartir y adaptar libremente este código, siempre y cuando cumplas con los términos de la GPL.
+
+Asegúrate de proporcionar el código fuente junto con cualquier distribución del software y de mantener intactos los avisos de derechos de autor y la licencia de la GPL.
 
 ## Contacto
 
